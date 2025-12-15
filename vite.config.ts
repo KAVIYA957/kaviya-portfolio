@@ -1,26 +1,26 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/kaviya-portfolio/",
+  base: '/kaviya-portfolio/',
   resolve: {
-    alias: [
-      {
-        find: "@",
-        replacement: path.resolve(__dirname, "./src")
-      }
-    ]
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
   build: {
-    rollupOptions: {
-      external: [
-        /^@\/components\/ui\/toaster/,
-        /^@\/components\/ui\/sonner/,
-        /^@\/components\/ui\/tooltip/
-      ]
-    }
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+  },
+  server: {
+    port: 3000,
+    open: true,
+  },
+  define: {
+    'process.env': {}
   }
 });

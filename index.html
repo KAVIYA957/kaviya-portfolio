@@ -1,10 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
     <title>Kaviya K | AI & Full-Stack Developer Portfolio</title>
     <meta name="description" content="Portfolio of Kaviya K - CSE student specializing in AI, automation, and full-stack development. View projects, skills, and achievements." />
     <meta name="keywords" content="Kaviya K, AI Developer, Full-Stack Developer, CSE Student, React, Python, Machine Learning, Portfolio" />
@@ -16,20 +14,17 @@
     <meta property="og:description" content="Passionate CSE student building intelligent solutions through AI, automation, and full-stack development." />
     <meta property="og:site_name" content="Kaviya K Portfolio" />
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kaviya K | AI & Full-Stack Developer" />
-    <meta name="twitter:description" content="Passionate CSE student building intelligent solutions through AI, automation, and full-stack development." />
-    
-    <!-- Favicon - Custom KK Logo -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232563EB'/%3E%3Cstop offset='100%25' stop-color='%238B5CF6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='8' fill='%23f8fafc'/%3E%3Cpath d='M8 10V30M8 20L16 10M8 20L16 30' stroke='url(%23g1)' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M22 10V30M22 20L30 10M22 20L30 30' stroke='url(%23g1)' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/kaviya-portfolio/favicon.ico" />
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#2563EB" />
-    <script type="module" crossorigin src="/kaviya-portfolio/assets/index-CYwxTIBv.js"></script>
-    <link rel="stylesheet" crossorigin href="/kaviya-portfolio/assets/index-SrzohaCA.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="modulepreload" href="data:application/octet-stream;base64,aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnOwppbXBvcnQgeyBTdHJpY3RNb2RlIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgQXBwIGZyb20gJy4vQXBwJzsKaW1wb3J0ICcuL2luZGV4LmNzcyc7CgovLyBFcnJvciBCb3VuZGFyeSBDb21wb25lbnQKY2xhc3MgRXJyb3JCb3VuZGFyeSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudDx7Y2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZX0sIHtoYXNFcnJvcjogYm9vbGVhbn0+IHsKICBjb25zdHJ1Y3Rvcihwcm9wczoge2NoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGV9KSB7CiAgICBzdXBlcihwcm9wcyk7CiAgICB0aGlzLnN0YXRlID0geyBoYXNFcnJvcjogZmFsc2UgfTsKICB9CgogIHN0YXRpYyBnZXREZXJpdmVkU3RhdGVGcm9tRXJyb3IoKSB7CiAgICByZXR1cm4geyBoYXNFcnJvcjogdHJ1ZSB9OwogIH0KCiAgY29tcG9uZW50RGlkQ2F0Y2goZXJyb3I6IGFueSwgZXJyb3JJbmZvOiBhbnkpIHsKICAgIGNvbnNvbGUuZXJyb3IoJ1VuY2F1Z2h0IGVycm9yOicsIGVycm9yLCBlcnJvckluZm8pOwogIH0KCiAgcmVuZGVyKCkgewogICAgaWYgKHRoaXMuc3RhdGUuaGFzRXJyb3IpIHsKICAgICAgcmV0dXJuICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWluLWgtc2NyZWVuIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGJnLWdyYXktNTAiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InRleHQtY2VudGVyIHAtOCBiZy13aGl0ZSByb3VuZGVkLWxnIHNoYWRvdy1sZyI+CiAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9InRleHQtMnhsIGZvbnQtYm9sZCB0ZXh0LXJlZC02MDAgbWItNCI+U29tZXRoaW5nIHdlbnQgd3Jvbmc8L2gxPgogICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtZ3JheS02MDAiPldlJ3JlIHdvcmtpbmcgb24gZml4aW5nIHRoaXMgaXNzdWUuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuPC9wPgogICAgICAgICAgICA8YnV0dG9uIAogICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IHdpbmRvdy5sb2NhdGlvbi5yZWxvYWQoKX0gCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJtdC00IHB4LTQgcHktMiBiZy1ibHVlLTYwMCB0ZXh0LXdoaXRlIHJvdW5kZWQgaG92ZXI6YmctYmx1ZS03MDAgdHJhbnNpdGlvbi1jb2xvcnMiCiAgICAgICAgICAgID4KICAgICAgICAgICAgICBSZWxvYWQgUGFnZQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICApOwogICAgfQoKICAgIHJldHVybiB0aGlzLnByb3BzLmNoaWxkcmVuOyAKICB9Cn0KCi8vIEluaXRpYWxpemUgdGhlIGFwcApjb25zdCByb290RWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290Jyk7CgppZiAoIXJvb3RFbGVtZW50KSB7CiAgdGhyb3cgbmV3IEVycm9yKCdGYWlsZWQgdG8gZmluZCB0aGUgcm9vdCBlbGVtZW50Jyk7Cn0KCmNvbnN0IHJvb3QgPSBjcmVhdGVSb290KHJvb3RFbGVtZW50KTsKCnJvb3QucmVuZGVyKAogIDxTdHJpY3RNb2RlPgogICAgPEVycm9yQm91bmRhcnk+CiAgICAgIDxBcHAgLz4KICAgIDwvRXJyb3JCb3VuZGFyeT4KICA8L1N0cmljdE1vZGU+Cik7Cg==" />
+    <script type="module" crossorigin src="/kaviya-portfolio/assets/index-CdF3Dj61.js"></script>
+    <link rel="stylesheet" crossorigin href="/kaviya-portfolio/assets/index-DoG0MZ_E.css">
   </head>
-
   <body>
     <div id="root"></div>
   </body>

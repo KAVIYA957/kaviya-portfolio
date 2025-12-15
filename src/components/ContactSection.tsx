@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Mail, Linkedin, Github, Send, CheckCircle2 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { useToast } from "../hooks/use-toast";
 
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);

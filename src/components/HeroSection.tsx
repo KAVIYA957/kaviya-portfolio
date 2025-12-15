@@ -99,7 +99,7 @@ const HeroSection = () => {
               <span className="group-hover:translate-x-1 transition-transform">→</span>
             </a>
             <a
-              href="/Kaviya_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Kaviya_Resume.pdf`}
               download="Kaviya_K_Resume.pdf"
               className="group flex items-center gap-2 px-8 py-4 rounded-full glass-card border border-border/50 font-semibold hover:border-primary/50 transition-all duration-300 hover:scale-105"
             >
